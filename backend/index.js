@@ -5,9 +5,9 @@ const mongoose=require("mongoose");
 const jwt=require("jsonwebtoken");
 const multer=require("multer");
 const path=require("path");
-const cros=require("cros");
+const cors=require("cors");
 app.use(express.json());
-app.use(cros());
+app.use(cors());
 
 //Database Connection With MongoDB
 mongoose.connect("mongodb+srv://RomdhaniAsma:comagri22@cluster0.xp2uk.mongodb.net/e-commerce");
