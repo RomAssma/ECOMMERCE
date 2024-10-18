@@ -18,7 +18,7 @@ setImage(e.target.files[0]);
  setProductDetails({...productDetails,[e.target.name]:e.target.value}) 
  }
  
- const Add_product=async()=>{
+ const Add_Product=async()=>{
   console.log(productDetails);
   let responseData;
   let product=productDetails;
@@ -66,7 +66,7 @@ setImage(e.target.files[0]);
   <select value ={productDetails.category} onChange={changeHandler} name="category" className="add-product-selector">
     <option value="women">Women</option>
     <option value="men">Men</option>
-    <option value="kids">Kids</option>
+    <option value="kid">Kid</option>
   </select>
 </div>
 <div className="addproduct-itemfiled">
